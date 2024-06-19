@@ -1,0 +1,79 @@
+[echo]
+bind = ":6666"
+
+[jwt]
+expire = 24
+secret = "10fc4956fb1d4f0f963d8cc2a3bf86e9"
+
+[mysql]
+host = ""
+port =
+username = ""
+password = ""
+dbname = ""
+show_sql = true
+
+[redis]
+has = false
+host = "192.168.0.106"
+port = 6379
+password = ""
+db = 1
+
+[leveldb]
+has = false
+path = "./leveldb_data"
+
+[nsq_producer_15min]
+has = true
+nsq_addr = "192.168.0.39:4150"
+topic_name = "order_delay_15m_topic_name"
+
+[nsq_consumer_15min]
+has = true
+nsq_addr = "192.168.0.39:4150"
+topic_name = "order_delay_15m_topic_name"
+channel_name = "order_delay_15m_topic_name"
+
+[nsq_producer_1h]
+has = true
+nsq_addr = "192.168.0.39:4150"
+topic_name = "order_delay_1h_topic_name"
+
+[nsq_consumer_1h]
+has = true
+nsq_addr = "192.168.0.39:4150"
+topic_name = "order_delay_1h_topic_name"
+channel_name = "order_delay_1h_topic_name"
+
+
+[log]
+admin_path = "./log/admin"
+app_path = "./log/app"
+openapi_path = "./log/openapi"
+admin_name = "admin.log"
+app_name = "app.log"
+openapi_name = "openapi.log"
+
+[alioss]
+access_key_id = ""
+access_key_secret = ""
+endpoint = ""
+bucket_name = ""
+base_path = ""
+
+photo_host = ""
+
+[wallet]
+key = ""
+pk = ""
+url = ""
+
+[chat]
+url = ""
+
+[coin_price]
+url = ""
+
+[cashier]
+url = ""
